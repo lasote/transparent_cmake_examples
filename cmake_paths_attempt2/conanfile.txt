@@ -1,0 +1,9 @@
+[requires]
+libcurl/7.56.1@bincrafters/stable
+
+[generators]
+cmake_paths
+
+[options]
+libcurl:with_openssl=True
+libcurl:darwin_ssl=False # Force use openssl in OSX too
