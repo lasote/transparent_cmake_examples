@@ -6,4 +6,4 @@ cmake
 
 [options]
 libcurl:with_openssl=True
-libcurl:darwin_ssl=False # Force use openssl in OSX too
+# libcurl:darwin_ssl=False # Force use openssl in OSX too
