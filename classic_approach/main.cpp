@@ -12,7 +12,7 @@ int main(void)
   if(curl) {
     struct curl_slist *list = NULL;
     list = curl_slist_append(list, "user-agent: libcurl");
-    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, -1);
     curl_easy_setopt(curl, CURLOPT_HTTPHEADER, list);
     curl_easy_setopt(curl, CURLOPT_URL, "https://api.github.com/repos/conan-io/conan/stargazers");
     res = curl_easy_perform(curl);
